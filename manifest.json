@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "Timeless Jewels Helper",
+    "version": "1.0",
+    "description": "军团珠宝可视化页面 支持跳转到国服市集",
+    "content_scripts": [
+        {
+            "js": [
+                "scripts/loader.js"
+            ],
+            "matches": [
+                "https://vilsol.github.io/timeless-jewels/*"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "scripts/main.js"
+            ],
+            "matches": [
+                "https://vilsol.github.io/*"
+            ]
+        }
+    ],
+    "icons": {
+        "78": "images/favicon.png"
+    }
+}
